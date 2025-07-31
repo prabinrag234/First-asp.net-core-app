@@ -1,31 +1,31 @@
 {
   "profiles": {
-    "Kestrel Server": {
+    "Kestrel Server Development": {
       "commandName": "Project",
       "launchBrowser": true,
-      "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5000"
     },
-    "Kestrel Server2": {
+    "Kestrel Server Production": {
       "commandName": "Project",
       "launchBrowser": true,
-      "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:5001",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Production"
-      }
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5001"
     },
-    "Kestrel Server3": {
+    "Kestrel Server Stage": {
       "commandName": "Project",
       "launchBrowser": true,
-      "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:5002",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Stage"
-      }
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5002"
     },
     "IIS Express": {
       "commandName": "IISExpress",
@@ -33,6 +33,16 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "launchBrowser": true,
+      "launchUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://localhost:5000"
+      },
+      "distributionName": ""
     }
   },
   "$schema": "https://json.schemastore.org/launchsettings.json",
