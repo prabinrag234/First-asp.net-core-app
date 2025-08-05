@@ -11,4 +11,11 @@ namespace Custommiddleware.CustomMiddleware
         }
     }
 
+    public static class CustomeMiddlewareExtensions
+    {
+        public static IApplicationBuilder UseCustomeMiddleware(this IApplicationBuilder builder)
+        {
+            return builder.UseMiddleware<CustomeMiddleware>();
+        }
+    }
 }
