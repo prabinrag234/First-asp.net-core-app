@@ -19,7 +19,10 @@ app.Use( async(HttpContext context, RequestDelegate next) =>
 //app.UseMiddleware<CustomeMiddleware>();
 
 // Use the custom middleware with dependency injection
-app.UseCustomeMiddleware();
+//app.UseCustomeMiddleware();
+
+// Use the conventional middleware
+app.UseConventional_Middleware();
 
 app.Use((HttpContext context, RequestDelegate next) =>
 {
