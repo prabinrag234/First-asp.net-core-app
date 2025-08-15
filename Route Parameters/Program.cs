@@ -5,11 +5,12 @@ app.UseRouting();
 
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapGet("/home/{anothertext}/{id}", async context =>
+    endpoints.MapGet("/home/{auther?}/{id?}", async context =>
     {
         var id = Convert.ToInt32(context.Request.RouteValues["id"]);
-        var anotherText = Convert.ToString(context.Request.RouteValues["anothertext"]);
-        await context.Response.WriteAsync($"Hello, World! {id} and {anotherText}");
+        var auther = Convert.ToString(context.Request.RouteValues["auther"]);
+
+        await context.Response.WriteAsync($"the auther is {auther} and ID is {id} ");
     });
 });
 
